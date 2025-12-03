@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Marks Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h2>Student ERP</h2>
+    <p>Marks System</p>
+  </aside>
+
+  <main class="main">
+    <h1>Dashboard</h1>
+
+    <div class="cards">
+      <div class="card">
+        <span>Total Students</span>
+        <h2 id="totalStudents">0</h2>
+      </div>
+      <div class="card">
+        <span>Average %</span>
+        <h2 id="avgPercent">0%</h2>
+      </div>
+    </div>
+
+    <section class="box">
+      <h2>Add Student</h2>
+      <form id="form">
+        <input id="name" placeholder="Name" required>
+        <input id="roll" placeholder="Roll No" required>
+        <input id="branch" placeholder="Branch" required>
+        <input id="m1" type="number" placeholder="Subject 1" required>
+        <input id="m2" type="number" placeholder="Subject 2" required>
+        <input id="m3" type="number" placeholder="Subject 3" required>
+        <input id="m3" type="number" placeholder="Subject 4" required>
+        <input id="m3" type="number" placeholder="Subject 5" required>
+        <input id="m3" type="number" placeholder="Subject 6" required>
+        <button>Add Student</button>
+      </form>
+    </section>
+
+    <section class="box">
+      <h2>Student Records</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Roll</th>
+            <th>Branch</th>
+            <th>Total</th>
+            <th>%</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </section>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
